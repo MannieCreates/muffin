@@ -118,9 +118,20 @@
                               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                               <span class="padding_10">Cart</span></a>
                            </li>
-                           <li><a href="#">
+                           <!-- <li><a href="#">
                               <i class="fa fa-user" aria-hidden="true"></i>
                               <span class="padding_10">Log in / Sign-up</span></a>
+                           </li> -->
+                           <li> 
+                              <div class="dropdown">
+                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Credentials 
+                                 </button>
+                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="{% url 'signup' %}" style="color: black;">Sign-up</a>
+                                    <a class="dropdown-item" href="{% url 'login' %}" style="color: black;">Log-in</a>
+                                    <a class="dropdown-item" href="{% url 'forgot_password' %}" style="color: black;">Forget Password</a>
+                                 </div>
+                              </div>
                            </li>
                         </ul>
                      </div>
